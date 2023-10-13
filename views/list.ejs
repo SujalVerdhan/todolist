@@ -4,14 +4,18 @@
     
 <h1><%=key%></h1>
 </div>
+
 <div class="box">
 
-   <% for(var i=0;i<item.length;i++){%>
+  <% item.forEach(function(i){ %>
+   <form action="/delete" method="post">
     <div class="lists">
-      <input type="checkbox">
-        <p><%=item[i]%></p>
+     <input type="checkbox" name="checkbox" value="<%=i._id%>" onchange="this.form.submit()">
+     <p><%=i.name%></p>
+  <input type="hidden" value="<%=key%>" name="listName"></input>
     </div>
-   <% }%>
+  </form>
+  <%})%>
 
    <form action="/" method="post">
     <input type="text" name="input" placeholder="New Item">
@@ -24,6 +28,6 @@
 <% for(var i=0;i<file.length;i++){%>
   <p>☑️<%=file[i].name%></p>
    <% }%>
-  </div>
+</div>
 
 <%- include("footer") -%>
