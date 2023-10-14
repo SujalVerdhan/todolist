@@ -1,8 +1,9 @@
 body{
     background-image: -webkit-linear-gradient(65deg,#A683E3 50%,#E6E6FA 50%);
     font-family: 'Roboto', sans-serif;
-    height:100vh;
+    height:100%;
     background-repeat: no-repeat;
+    padding: 5%;
 }
 
 .box{
@@ -67,6 +68,7 @@ input{
     color:black;
     text-align: center;
     font-weight: bold;
+    
   }
   .about{
     background-color: #A683E3;
@@ -93,4 +95,9 @@ input{
     border-color: #A683E3;
     
   }
-  
+  .delete{
+    color:black;
+  background-color: transparent;
+  border-radius: 0;
+
+  }
