@@ -8,10 +8,8 @@ const hdate=require(__dirname+"/date.js");
 const fileUpload=require("express-fileupload")
 app.use(fileUpload());
 
-mongoose.connect(process.env.MONGO)
+mongoose.connect(process.env.MONGO);
 
-// mongoose.connect("mongodb+srv://Sujal_Verdhan:Sujal%40123@cluster0.am7bdua.mongodb.net/todolistDB")
-// mongoose.connect('mongodb://127.0.0.1:27017/todolistDB');
 
 const bodyparser=require("body-parser");
 

@@ -37,7 +37,7 @@ input[type="text"]{
     font-size: 1.2rem;
     text-align: center;
     border: none;
-    width:313px;
+    width:80%;
     margin:0 20px;
     height:48px;
 }
@@ -101,3 +101,8 @@ input{
   border-radius: 0;
 
   }
+@media only screen and (max-width:400px) {
+  input[type="file"] {
+padding: 5%;
+}
+}
