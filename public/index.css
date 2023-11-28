@@ -93,7 +93,7 @@ input{
     padding:30px;
     border-style: dotted;
     border-color: #A683E3;
-    
+    width:60%;
   }
   .delete{
     color:black;
